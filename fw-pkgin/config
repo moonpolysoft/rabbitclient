@@ -3,8 +3,8 @@
 
 FW_PACKAGE_NAME="rabbitclient"
 FW_PACKAGE_VERSION="0.0.0"
-FW_PACKAGE_MAINTAINER="cliff <cliff@cliffs-macbook-pro-15.local>"
-FW_PACKAGE_SHORT_DESCRIPTION="A short description."
+FW_PACKAGE_MAINTAINER="cliff <cliff@fastip.com>"
+FW_PACKAGE_SHORT_DESCRIPTION="A native erlang client library for both amqp and direct rabbit."
 FW_PACKAGE_DESCRIPTION=`cat README`
 FW_PACKAGE_ARCHITECTURE_DEPENDENT="0"
 
@@ -14,7 +14,7 @@ FW_PACKAGE_ARCHITECTURE_DEPENDENT="0"
 # 
 # For other packaging systems, the syntax is translated for you.
 
-FW_PACKAGE_DEPENDS=""
+FW_PACKAGE_DEPENDS="erlang-otp, rabbit, erlrc"
 FW_PACKAGE_CONFLICTS=""
 FW_PACKAGE_PROVIDES=""
 FW_PACKAGE_REPLACES=""
@@ -46,7 +46,7 @@ FW_PACKAGE_BUILD_CONFLICTS=""
 
 # uncomment to indicate additional OTP applications (besides kernel and stdlib)
 # that this application depends upon, comma-separated
-# FW_ERL_PREREQ_APPLICATIONS_EXTRA=""
+FW_ERL_PREREQ_APPLICATIONS_EXTRA="rabbit"
 
 # uncomment to add arbitrary extra content to the app file, e.g., an
 # included application directive.
