@@ -14,7 +14,7 @@ FW_PACKAGE_ARCHITECTURE_DEPENDENT="0"
 # 
 # For other packaging systems, the syntax is translated for you.
 
-FW_PACKAGE_DEPENDS="erlang-otp, rabbit, erlrc"
+FW_PACKAGE_DEPENDS="erlang-otp, rabbitmq-server, erlrc"
 FW_PACKAGE_CONFLICTS=""
 FW_PACKAGE_PROVIDES=""
 FW_PACKAGE_REPLACES=""
@@ -46,7 +46,7 @@ FW_PACKAGE_BUILD_CONFLICTS=""
 
 # uncomment to indicate additional OTP applications (besides kernel and stdlib)
 # that this application depends upon, comma-separated
-FW_ERL_PREREQ_APPLICATIONS_EXTRA="rabbit"
+FW_ERL_PREREQ_APPLICATIONS_EXTRA=""
 
 # uncomment to add arbitrary extra content to the app file, e.g., an
 # included application directive.
